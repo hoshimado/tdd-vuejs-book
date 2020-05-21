@@ -1,0 +1,21 @@
+/*
+ * [vue_main.css]
+ */
+
+
+#id_input_area textarea{
+    width : 480px;
+    height: 80px;
+}
+
+#id_todolist ul li {
+    margin: 16px;
+    padding: 4px;
+    background-color: burlywood;
+}
+
+.item_text {
+    white-space: pre-wrap;
+    cursor: pointer;
+}
+

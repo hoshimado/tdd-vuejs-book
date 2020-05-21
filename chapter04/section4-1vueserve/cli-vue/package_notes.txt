@@ -1,0 +1,9 @@
+以下はインストールしない。
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
+
+本プロジェクトでは、簡易さを優先して、public/index.htmlにて
+次を読み込むことで対応する。
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"></link>
+

@@ -1,0 +1,30 @@
+{
+  "name": "tbf07-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "cross-env NODE_ENV=test mocha --recursive --timeout 3000",
+    "dev": "cross-env DEBUG=myapp:* npm start",
+    "start": "node server.js"
+  },
+  "author": "hoshimado",
+  "license": "MIT",
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "@vue/cli": "^3.11.0",
+    "chai": "^4.2.0",
+    "cross-env": "^5.2.1",
+    "mocha": "^6.2.0",
+    "promise-test-helper": "^0.2.1",
+    "sinon": "^7.4.2"
+  }
+}

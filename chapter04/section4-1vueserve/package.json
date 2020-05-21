@@ -1,0 +1,40 @@
+{
+  "name": "tbf07-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "cross-env NODE_ENV=test mocha  --recursive --timeout 3000",
+    "dev": "cross-env DEBUG=myapp:* npm start",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoshimado/tbf07-sample.git"
+  },
+  "author": "hoshimado",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hoshimado/tbf07-sample/issues"
+  },
+  "homepage": "https://github.com/hoshimado/tbf07-sample#readme",
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1",
+    "sqlite3": "^4.0.9"
+  },
+  "devDependencies": {
+    "@vue/cli": "^3.11.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "cross-env": "^5.2.1",
+    "mocha": "^6.2.0",
+    "promise-test-helper": "^0.2.1",
+    "sinon": "^7.4.2"
+  }
+}

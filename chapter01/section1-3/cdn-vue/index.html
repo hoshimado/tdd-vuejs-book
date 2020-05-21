@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" id="id_viewport" content="width=device-width" >
+    
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"></link>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="./javascripts/vue_main.js"></script>
+    <link href="./stylesheets/vue_main.css" rel="stylesheet"></link>
+</head>
+<body>
+
+<div id="id_app1">
+    <div id="id_input_area">
+        <div id="id_input_textarea">
+            <textarea v-model="input_message" placeholder="ここに入力する。複数行可。"></textarea>
+        </div>
+        <div id="id_input_command">
+            <div id="id_input_additional">
+                リストに追加する
+            </div>
+            <div id="id_input_button" v-on:click="clickInputButton">
+                <a href="#"><i class="fas fa-pen fa-2x"></i></a>
+                <!-- 
+                    <input type="button" value="追加"></input> 
+                -->
+            </div>
+        </div>
+    </div>
+    <div id="id_todolist">
+        <ul>
+            <li v-for="(item,index) in todo_list" v-bind:key="index"> 
+                <!-- (要素、配列番号)で受け取れる仕様 -->
+                <div class="item_text" v-on:click="clickItem(index)"><span v-bind:style="item.styleStr">{{ item.text }}</span></div>
+                <div class="item_date">{{ item.dateStr }}</div>
+                <div v-on:click="clickDeleteButton(index)">
+                    <a href="#"><i class="fas fa-trash-alt"></i></a>
+                    <!-- 
+                        <input type="button" value="削除"></input> 
+                    -->
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
